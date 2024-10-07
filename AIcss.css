@@ -1,0 +1,55 @@
+/* Basic reset for body and HTML */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Default font */
+}
+
+/* Styling for the body */
+body {
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+/* Title styling */
+.title {
+    font-size: 3em; /* Large font size */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center the title */
+    color: #333; /* Dark gray text color */
+    margin-bottom: 20px; /* Space below the title */
+    text-transform: uppercase; /* Uppercase letters */
+    letter-spacing: 2px; /* Spacing between letters */
+    font-family: 'Georgia', serif; /* Fancy font style */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for effect */
+}
+
+/* Styling for the video container */
+.video-container {
+    background-color: #fff; /* White background for the video container */
+    border: 2px solid #333; /* Dark border around the video */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    padding: 10px; /* Padding inside the container */
+    max-width: 800px; /* Maximum width for the video container */
+    width: 100%; /* Full width */
+}
+
+/* Styling for the video element */
+video {
+    max-width: 100%; /* Responsive width */
+    border-radius: 5px; /* Slightly rounded corners for the video */
+}
+
+/* Styling for the caption or fallback message */
+.fallback-message {
+    text-align: center; /* Centered text */
+    color: #777; /* Light gray text color */
+    margin-top: 10px; /* Margin above the text */
+}
+

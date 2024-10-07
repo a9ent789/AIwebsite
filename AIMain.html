@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Video Player</title>
+    <link rel="stylesheet" href="AIcss.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+<!-- Title with big, fancy letters placed above the video -->
+<h1 class="title">I wanted you to watch this</h1>
+
+<!-- Video container to hold the video element and apply styles -->
+<div class="video-container">
+    <!-- Video player element -->
+    <video id="videoPlayer" controls>
+        <source src="C:\Users\video\Videos\test.mp4" type="video/mp4">
+        <p class="fallback-message">Your browser does not support the video tag.</p>
+    </video>
+</div>
+
+<script>
+    const video = document.getElementById('videoPlayer');
+
+    video.addEventListener('play', () => {
+        console.log('Video is playing');
+    });
+
+    video.addEventListener('pause', () => {
+        console.log('Video is paused');
+    });
+
+    video.addEventListener('ended', () => {
+        console.log('Video has ended');
+    });
+</script>
+
+</body>
+</html>
+
